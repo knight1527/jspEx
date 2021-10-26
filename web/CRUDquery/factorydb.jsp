@@ -20,7 +20,7 @@
        public static Connection getConnection(){
            String url = "jdbc:mysql://localhost:3306/homework?useUnicode=true&characterEncoding=utf-8&useSSL=true";
            String user = "root";
-           String password = "dqhd12138@";
+           String password = "******";
            try{
                Class.forName("com.mysql.jdbc.Driver");
            }catch (ClassNotFoundException e){
