@@ -1,0 +1,347 @@
+/*背景自定义*/
+html,body{
+    min-height: 1000px;
+}
+.bg1 {
+   background-image: url(../static/img/bg1.jpg);
+    background-size: cover;
+}
+.bg2 {
+    background-image: url(../static/img/bg2.jpg);
+    background-size: cover;
+}
+.bg3 {
+    background-image: url(../static/img/bg3.jpg);
+    background-size: cover;
+}
+.bg4 {
+    background-image: url(../static/img/bg4.jpg);
+    background-size: cover;
+}
+.bg5 {
+    background-image: url(../static/img/bg5.jpg);
+    background-size: cover;
+}
+.bg6 {
+    background-image: url(../static/img/bg6.jpg);
+    background-size: cover;
+}
+.bg7 {
+    background-image: url(../static/img/bg7.jpg);
+    background-size: cover;
+}
+.bg8 {
+    background-image: url(../static/img/bg8.jpg);
+    background-size: cover;
+}
+.bg9 {
+    background-image: url(../static/img/bg9.jpg);
+    background-size: cover;
+}
+.bg10 {
+    background-image: url(../static/img/bg10.jpg);
+    background-size: cover;
+}
+
+/*content*/
+.container{
+    max-width: 80%;
+    margin: auto;
+    height: 1000px;
+}
+.m-color{
+    color: #0095B6 !important;
+}
+.m-text-thin{
+    font-weight: 300 !important;
+}
+.container-success{
+    max-width: 80%;
+    margin: auto;
+    height: 1500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 2px #c4c1c1;
+}
+.container-else{
+    max-width: 80%;
+    margin: auto;
+    height: 720px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 2px #c4c1c1;
+}
+.m-table{
+    height: auto;
+}
+.m-table-content{
+    width: 80%;
+    margin: auto;
+}
+/*table{
+    border:1px solid #000;
+    border-collapse:collapse;    !*!/去除边框间空隙*!
+}
+th,td{
+    border:1px solid #000;
+}*/
+.m-border-none> tr,td{
+    border: none;
+}
+/*padding*/
+.m-padded{
+    padding: 1em !important;
+}
+.m-padded-normal{
+    padding: 3em;
+}
+.m-padded-lr{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/*a标签默认色*/
+.m-a{
+    color: black;
+}
+.m-a:hover{
+    color:  #0095B6;
+}
+/*图片选择*/
+.chose-img{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 100px;
+    height: auto;
+    opacity: 0.8;
+}
+.chose-img>img{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+.chose-img>p{
+    margin: 0;
+    height: 20px;
+}
+.chose-img>img:hover{
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+/*背景颜色*/
+.bg{
+    background-color: #e2f7fa;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*text*/
+.m-text-spaced{
+    letter-spacing: 1px !important;
+}
+.m-text-lined{
+    line-height: 1.8 !important;
+}
+.m-text-style{
+    font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+/*按钮hover特效*/
+.htr::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.htr:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.htr::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: aqua;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.htr {
+    position: relative;
+    font-size: 5rem;
+}
+
+
+/*登录特效*/
+.login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+/*
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
+}*/
