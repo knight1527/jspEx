@@ -61,9 +61,7 @@
 /*
      *搜索结果整理
      **/
-    public static List<String[]> searchRel(final List<String[]> rel1,
-                                          final List<String[]> rel2,
-              						                final List<String[]> rel3){
+    public static List<String[]> searchRel(final List<String[]> rel1,final List<String[]> rel2,final List<String[]> rel3){
               						
         return rel1.stream()
                 .filter(d -> rel2.stream()
@@ -74,8 +72,7 @@
                 )
                 .collect(Collectors.toList());
     }
-    public static List<String[]> searchRel(final List<String[]> rel1,
-    										                  final List<String[]> rel2){
+    public static List<String[]> searchRel(final List<String[]> rel1,final List<String[]> rel2){
     
         return rel1.stream()
                 .filter(d -> rel2.stream()
